@@ -7,9 +7,11 @@ import java.io.IOException;
 
 import org.base.BaseClass;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.page.PageObjectManager;
 import org.utility.FileReader_Manager_File;
 
+import io.cucumber.core.api.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -38,6 +40,8 @@ public class StepDefinition extends BaseClass{
     r.keyPress(KeyEvent.VK_ENTER);	  
 	}
 
+	
+
 	@When("user give the to place for their destination")
 	public void user_give_the_to_place_for_their_destination() {
 	 sendkeys(pom.getInstanacepom().getTotype(), "saudi");
@@ -62,6 +66,7 @@ public class StepDefinition extends BaseClass{
 	@Then("user see the fight list")
 	public void user_see_the_fight_list() throws InterruptedException, IOException {
       screenshot("cathay pacific");
+      
 	}
 
 
