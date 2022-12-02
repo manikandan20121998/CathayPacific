@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -68,10 +69,12 @@ public class BaseClass {
 
 	}
 	
+	public static void sendkeysenter(WebElement e,String value, Keys enter) {
+		e.sendKeys(value,Keys.ENTER);
+	}
 	public static void sendkeys(WebElement e,String value) {
 		e.sendKeys(value);
 	}
-	
 	public static void quit() {
 		driver.quit();
 	}
