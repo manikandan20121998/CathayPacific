@@ -69,11 +69,12 @@ public class BaseClass {
 
 	}
 	
-	public static void sendkeysenter(WebElement e,String value, Keys enter) {
-		e.sendKeys(value,Keys.ENTER);
-	}
 	public static void sendkeys(WebElement e,String value) {
 		e.sendKeys(value);
+	}
+	
+	public static void sendkeysenter(WebElement e,String value, Keys enter) {
+		e.sendKeys(value,Keys.ENTER);
 	}
 	public static void quit() {
 		driver.quit();

@@ -1,0 +1,108 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-02T08:45:23.296Z",
+        "line": 3,
+        "name": "to search the fight for specified date",
+        "description": "",
+        "id": "user-has-to-search-a-fight-for-travling;to-search-the-fight-for-specified-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60944534000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has to in verified website",
+            "match": {
+              "location": "StepDefinition.user_has_to_in_verified_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10450873500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user give the from place of take",
+            "match": {
+              "location": "StepDefinition.user_give_the_from_place_of_take()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 869903700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user give the to place for their destination",
+            "match": {
+              "location": "StepDefinition.user_give_the_to_place_for_their_destination()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1303400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user has to give date of travel",
+            "match": {
+              "location": "StepDefinition.user_has_to_give_date_of_travel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1297000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user has to give date of return",
+            "match": {
+              "location": "StepDefinition.user_has_to_give_date_of_return()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2429275600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user has to click search button for check available fight lists",
+            "match": {
+              "location": "StepDefinition.user_has_to_click_search_button_for_check_available_fight_lists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 620756300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user see the fight list",
+            "match": {
+              "location": "StepDefinition.user_see_the_fight_list()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "user has to search a fight for travling",
+    "description": "",
+    "id": "user-has-to-search-a-fight-for-travling",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/CathyaPacific.feature",
+    "tags": []
+  }
+]
