@@ -21,11 +21,7 @@ public class StepDefinition extends BaseClass{
 	public static Robot r;
 	@Given("user has to in verified website")
 	public void user_has_to_in_verified_website() throws IOException {
-     chromebrowser();
-     String url = FileReader_Manager_File.getInstance().geturl();
-     urllaunch(url);
-     maximize();
-     implicitywait(10);
+    
      
 	}
 
@@ -65,9 +61,32 @@ public class StepDefinition extends BaseClass{
 
 	@Then("user see the fight list")
 	public void user_see_the_fight_list() throws InterruptedException, IOException {
-      screenshot("cathay pacific");
+      screenshot("cathay pacific Access Denied");
       
 	}
 
+	@When("user have to go till down on website")
+	public void user_have_to_go_till_down_on_website() throws InterruptedException {
+     Thread.sleep(3000);
+		scrolldown(pom.getInstancePom2().getWebinsta());
+	}
 
+	@When("User have to click instagram logo")
+	public void user_have_to_click_instagram_logo() throws InterruptedException {
+		 Thread.sleep(3000);
+		click(pom.getInstancePom2().getWebinsta());
+	}
+
+	@When("user will see the instagram offi then click follow req")
+	public void user_will_see_the_instagram_offi_then_click_follow_req() throws InterruptedException {
+		 Thread.sleep(3000);
+		pom.getInstancePom2().handle();
+     click(pom.getInstancePom2().getFollow());
+	}
+
+	@Then("Take a snap for evidence")
+	public void take_a_snap_for_evidence() throws IOException, InterruptedException {
+		 Thread.sleep(3000);
+		screenshot("Instagram");
+	}
 }

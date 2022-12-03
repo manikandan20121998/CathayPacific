@@ -1,34 +1,65 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-12-02T08:45:23.296Z",
-        "line": 3,
-        "name": "to search the fight for specified date",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "user-has-to-search-a-fight-for-travling;to-search-the-fight-for-specified-date",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 60944534000,
+              "duration": 5886400,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "user has to in verified website",
             "match": {
               "location": "StepDefinition.user_has_to_in_verified_website()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-03T12:36:44.547Z",
+        "before": [
           {
             "result": {
-              "duration": 10450873500,
+              "duration": 20780810800,
               "status": "passed"
             },
-            "line": 5,
+            "match": {
+              "location": "HooksClass.BeforeClass()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "to search the fight for specified date",
+        "description": "",
+        "id": "user-has-to-search-a-fight-for-travling;to-search-the-fight-for-specified-date",
+        "after": [
+          {
+            "result": {
+              "duration": 1585632400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.AfterClass()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4079314700,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "user give the from place of take",
             "match": {
               "location": "StepDefinition.user_give_the_from_place_of_take()"
@@ -37,10 +68,10 @@
           },
           {
             "result": {
-              "duration": 869903700,
+              "duration": 558367900,
               "status": "passed"
             },
-            "line": 6,
+            "line": 10,
             "name": "user give the to place for their destination",
             "match": {
               "location": "StepDefinition.user_give_the_to_place_for_their_destination()"
@@ -49,10 +80,10 @@
           },
           {
             "result": {
-              "duration": 1303400,
+              "duration": 2338600,
               "status": "passed"
             },
-            "line": 7,
+            "line": 11,
             "name": "user has to give date of travel",
             "match": {
               "location": "StepDefinition.user_has_to_give_date_of_travel()"
@@ -61,10 +92,10 @@
           },
           {
             "result": {
-              "duration": 1297000,
+              "duration": 1371500,
               "status": "passed"
             },
-            "line": 8,
+            "line": 12,
             "name": "user has to give date of return",
             "match": {
               "location": "StepDefinition.user_has_to_give_date_of_return()"
@@ -73,10 +104,10 @@
           },
           {
             "result": {
-              "duration": 2429275600,
+              "duration": 1825242500,
               "status": "passed"
             },
-            "line": 9,
+            "line": 13,
             "name": "user has to click search button for check available fight lists",
             "match": {
               "location": "StepDefinition.user_has_to_click_search_button_for_check_available_fight_lists()"
@@ -85,15 +116,133 @@
           },
           {
             "result": {
-              "duration": 620756300,
+              "duration": 262679600,
               "status": "passed"
             },
-            "line": 10,
+            "line": 14,
             "name": "user see the fight list",
             "match": {
               "location": "StepDefinition.user_see_the_fight_list()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@first"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1120000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has to in verified website",
+            "match": {
+              "location": "StepDefinition.user_has_to_in_verified_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-03T12:37:13.759Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22535966300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.BeforeClass()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "",
+        "description": " Aa user have to click instagram follow through a website",
+        "id": "user-has-to-search-a-fight-for-travling;",
+        "after": [
+          {
+            "result": {
+              "duration": 2078012900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.AfterClass()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3096933400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user have to go till down on website",
+            "match": {
+              "location": "StepDefinition.user_have_to_go_till_down_on_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3551830000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User have to click instagram logo",
+            "match": {
+              "location": "StepDefinition.user_have_to_click_instagram_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11942880700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user will see the instagram offi then click follow req",
+            "match": {
+              "location": "StepDefinition.user_will_see_the_instagram_offi_then_click_follow_req()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4067697000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Take a snap for evidence",
+            "match": {
+              "location": "StepDefinition.take_a_snap_for_evidence()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@second"
           }
         ]
       }
@@ -103,6 +252,15 @@
     "id": "user-has-to-search-a-fight-for-travling",
     "keyword": "Feature",
     "uri": "file:src/test/resources/Features/CathyaPacific.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@E2E",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

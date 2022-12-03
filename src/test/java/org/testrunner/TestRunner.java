@@ -11,9 +11,10 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features= "src/test/resources",
 dryRun=false,glue= "org.stepdefinition",
+tags="@E2E",
 plugin= {"json:src\\test\\resources\\Reports\\JsonRep\\rep.json",
        "html:src\\test\\resources\\Reports\\HtmlRep\\html"})
-public class TestRunner extends BaseClass{
+public class TestRunner {
 @AfterClass
 public static void afterClass() {
 
