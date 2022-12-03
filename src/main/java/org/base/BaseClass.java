@@ -298,11 +298,23 @@ public class BaseClass {
 		screenshot(name);
 	}
 	
+	public static String getwindowhandle() {
+
+		String winid = driver.getWindowHandle();
+		return winid;
+	}
 	
+	public static Set<String> getwindowhandles() {
+
+		Set<String> winids = driver.getWindowHandles();
+		return winids;
+		
+	}
 	
-	
-	
-	
+	public static void switchtowindow(String id) {
+
+		driver.switchTo().window(id);
+	}
 	
 	
 	
